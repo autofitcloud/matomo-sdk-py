@@ -1,0 +1,5 @@
+.*swp
+__pycache__
+matomo_sdk_py.egg-info
+build
+dist
