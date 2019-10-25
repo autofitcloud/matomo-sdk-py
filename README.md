@@ -19,6 +19,41 @@ from matomo_sdk_py import ping_matomo
 ping_matomo("/test", "https://example.com", 1, "abcdef", "https://example.matomo.cloud")
 ```
 
+## Dev notes
+
+New release
+
+```
+update version in matomo_sdk_py/__init__.py
+update version in changelog
+commit with 'version bump 0.1.0'
+git tag 0.1.0
+git push origin 0.1.0
+```
+
+To publish to pypi
+
+```
+pip3 install twine
+rm build/* -rf
+rm dist/* -rf
+python3 setup.py sdist bdist_wheel
+twine upload dist/*
+```
+
+Install locally for development
+
+```
+pip3 install -e .
+pip3 install -r requirements_dev.txt
+```
+
+Run test
+
+```
+pytest
+```
+
 
 ## Changelog
 

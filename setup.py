@@ -1,4 +1,3 @@
-# 2019-10-24 Not sure why find_packages was commented out .. bringing it back
 from setuptools import setup, find_packages
 
 # copied from https://github.com/awslabs/git-remote-codecommit/blob/master/setup.py
@@ -26,7 +25,6 @@ setup(
     long_description_content_type="text/markdown",
     
     packages=find_packages(),
-    # packages = ['isitfit'],
     include_package_data=True,
     install_requires=[
         'requests==2.22.0',

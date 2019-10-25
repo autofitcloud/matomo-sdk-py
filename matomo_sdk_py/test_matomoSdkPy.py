@@ -3,7 +3,7 @@
 def test_ping_matomo(mocker):
   from .matomo_sdk_py import ping_matomo
   def mockreturn(*args, **kwargs): return "foo"
-  mocked_post = mocker.patch('isitfit.utils.requests.post', side_effect=mockreturn)
+  mocked_post = mocker.patch('matomo_sdk_py.matomo_sdk_py.requests.post', side_effect=mockreturn)
   ping_matomo("/test", "https://example.com", 1, "abcdef", "https://example.matomo.cloud")
 
   # check that mocked object is called

@@ -1,6 +1,3 @@
-matomoSdkPy_version='0.1.0'
-
-
 import requests
 SKIP_PING=False
 def ping_matomo(action_name, action_base, idsite, uuid_val, matomo_url):
