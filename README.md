@@ -15,7 +15,7 @@ pip3 install matomo_sdk_py
 ## Usage
 
 ```
-from matomo_sdk_py import ping_matomo
+from matomo_sdk_py.matomo_sdk_py import ping_matomo
 ping_matomo("/test", "https://example.com", 1, "abcdef", "https://example.matomo.cloud")
 ```
 
