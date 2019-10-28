@@ -16,7 +16,7 @@ pip3 install matomo_sdk_py
 
 ```
 from matomo_sdk_py.matomo_sdk_py import ping_matomo
-ping_matomo("/test", "https://example.com", 1, "abcdef", "https://example.matomo.cloud")
+ping_matomo("/test", "https://example.com", 1, "abcdef", "https://example.matomo.cloud/piwik.php")
 ```
 
 ## Dev notes

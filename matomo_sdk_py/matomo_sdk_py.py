@@ -8,7 +8,7 @@ def ping_matomo(action_name, action_base, idsite, uuid_val, matomo_url):
   action_base - website URL in matomo, e.g. https://example.com
   idsite - integer representing ID of website in matomo
   uuid_val - matomo field "uid"
-  matomo_url - URL of matomo host, eg https://example.matomo.cloud
+  matomo_url - URL of matomo host, eg https://example.matomo.cloud/piwik.php
   """
   # if any previous failure, just skip it completely
   global SKIP_PING # http://stackoverflow.com/questions/423379/ddg#423596 
