@@ -9,3 +9,10 @@ def test_ping_matomo(mocker):
   # check that mocked object is called
   # https://github.com/pytest-dev/pytest-mock/commit/68868872195135bdb90d45a5cb0d609400943eae
   mocked_post.assert_called()
+
+
+# TODO
+# Create a functional test against a real matomo endpoint
+# Check the response as follows
+# assert response.__dict__['_content'] == '{"status":"success","tracked":1,"invalid":0}'
+# This ensures that the payload was matomo-valid also (not just that the http request was sent)

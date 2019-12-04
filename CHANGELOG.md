@@ -1,4 +1,4 @@
-Version 0.2.0 (2019-12-04)
+Version 0.2.1 (2019-12-04)
 
 - enh: set the visitor ID
 
