@@ -1,2 +1,2 @@
-matomoSdkPy_version='0.1.0'
+matomoSdkPy_version='0.2.0'
 
