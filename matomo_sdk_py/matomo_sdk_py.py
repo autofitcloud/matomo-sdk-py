@@ -27,6 +27,13 @@ def ping_matomo(action_name, action_base, idsite, uuid_val, matomo_url):
     "rec": 1,
     "action_name": action_name,
     "uid": uuid_val,
+
+    # use the same UID for matomo's visitor ID.
+    # More info at:
+    # https://matomo.org/docs/user-id/
+    # https://developer.matomo.org/api-reference/tracking-api
+    "cid": uuid_val,
+
     "url": action_url
   }
   payload = {"requests": ["?"+urlencode(req_i)]}
